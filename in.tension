@@ -1,0 +1,202 @@
+units           metal
+dimension       3
+boundary        p       p       p
+atom_style      atomic
+variable latparam equal 3.21
+
+read_data       data
+
+pair_style hybrid/overlay meam zbl 0.5 2
+pair_coeff      * * meam library.meam Al Co Cu Cr Fe Mn Ni Ti FeMnNiTiCuCrCoAl.meam Al Co Cu Cr Fe Mn Ni Ti
+
+
+pair_coeff 1 1 zbl 13 13   # Al–Al
+pair_coeff 2 2 zbl 27 27   # Co–Co
+pair_coeff 3 3 zbl 29 29   # Cu–Cu
+pair_coeff 4 4 zbl 24 24   # Cr–Cr
+pair_coeff 5 5 zbl 26 26   # Fe–Fe
+pair_coeff 6 6 zbl 25 25   # Mn–Mn
+pair_coeff 7 7 zbl 28 28   # Ni–Ni
+pair_coeff 8 8 zbl 22 22   # Ti–Ti
+
+
+pair_coeff 1 2 zbl 13 27   # Al–Co
+pair_coeff 1 3 zbl 13 29   # Al–Cu
+pair_coeff 1 4 zbl 13 24   # Al–Cr
+pair_coeff 1 5 zbl 13 26   # Al–Fe
+pair_coeff 1 6 zbl 13 25   # Al–Mn
+pair_coeff 1 7 zbl 13 28   # Al–Ni
+pair_coeff 1 8 zbl 13 22   # Al–Ti
+
+pair_coeff 2 3 zbl 27 29   # Co–Cu
+pair_coeff 2 4 zbl 27 24   # Co–Cr
+pair_coeff 2 5 zbl 27 26   # Co–Fe
+pair_coeff 2 6 zbl 27 25   # Co–Mn
+pair_coeff 2 7 zbl 27 28   # Co–Ni
+pair_coeff 2 8 zbl 27 22   # Co–Ti
+
+pair_coeff 3 4 zbl 29 24   # Cu–Cr
+pair_coeff 3 5 zbl 29 26   # Cu–Fe
+pair_coeff 3 6 zbl 29 25   # Cu–Mn
+pair_coeff 3 7 zbl 29 28   # Cu–Ni
+pair_coeff 3 8 zbl 29 22   # Cu–Ti
+
+pair_coeff 4 5 zbl 24 26   # Cr–Fe
+pair_coeff 4 6 zbl 24 25   # Cr–Mn
+pair_coeff 4 7 zbl 24 28   # Cr–Ni
+pair_coeff 4 8 zbl 24 22   # Cr–Ti
+
+pair_coeff 5 6 zbl 26 25   # Fe–Mn
+pair_coeff 5 7 zbl 26 28   # Fe–Ni
+pair_coeff 5 8 zbl 26 22   # Fe–Ti
+
+pair_coeff 6 7 zbl 25 28   # Mn–Ni
+pair_coeff 6 8 zbl 25 22   # Mn–Ti
+
+pair_coeff 7 8 zbl 28 22   # Ni–Ti
+
+
+
+
+group Al type 1
+group Co type 2
+group Cu type 3
+group Cr type 4
+group Fe type 5
+group Mn type 6
+group Ni type 7
+group Ti type 8
+
+
+min_style       cg
+min_modify      dmax 0.1
+thermo          10000
+thermo_style    multi
+minimize        1e-15 1e-15 1000000 1000000
+
+compute csym all centro/atom bcc
+compute peratom all pe/atom
+reset_timestep  0
+
+timestep 0.001
+velocity all create 300 123456 dist gaussian
+
+
+
+
+
+
+
+
+fix 3 all npt temp 300 300 1 iso 0 0 1 drag 1
+
+thermo 1000
+
+thermo_style custom step temp press ke pe etotal vol density
+run 2000
+write_data dataend
+unfix 3
+
+
+
+
+
+
+
+
+#Equilibration at required Temperature
+fix 6 all nve
+thermo 1000
+thermo_style custom step temp press ke pe etotal vol density
+run 5000
+unfix 6
+
+print "equi done"
+
+variable tmp equal "lx"
+variable tmp_y equal "ly"
+variable tmp_z equal "lz"
+variable L0 equal ${tmp}
+variable Ly0 equal ${tmp_y}
+variable Lz0 equal ${tmp_z}
+
+print "Initial Length, L0: ${L0}"
+compute csym2 all centro/atom bcc
+variable a loop 1
+label loop
+
+fix 27 all npt temp 300 300 1 iso 0 0 1 drag 1
+thermo 1000
+thermo_style custom step temp press ke pe etotal vol density
+run 5000
+unfix 27
+
+fix 28 all nve
+thermo 1000
+thermo_style custom step temp press ke pe etotal vol density
+run 5000
+unfix 28
+
+
+
+
+fix             29 all npt temp 300 300 1 y 0 0 1 z 0 0 1 drag 1
+variable srate equal 4e10
+variable srate1 equal "v_srate/1.0e12"
+fix             30 all deform 1 x erate ${srate1} units box remap x
+
+# Output strain and stress info to file
+# # for units metal, pressure is in [bars] = 100 [kPa] = 1/10000 [GPa]
+# # p2, p3, p4 are in MPa
+variable strain equal "(lx - v_L0)/v_L0"
+variable strain_y equal "(ly - v_Ly0)/v_Ly0"
+variable strain_z equal "(lz - v_Lz0)/v_Lz0"
+#
+#
+variable p1 equal "v_strain"
+variable p1y equal "v_strain_y"
+variable p1z equal "v_strain_z"
+#
+ variable pois1 equal "-v_strain_y/v_strain"
+ variable pois2 equal "-v_strain_z/v_strain"
+#
+#
+ variable p2 equal "-pxx/10000"
+ variable p3 equal "-pyy/10000"
+ variable p4 equal "-pzz/10000"
+ fix def1 all print 500 "${p1} ${p1y} ${p1z} ${pois1} ${pois2}  ${p2} ${p3} ${p4}" file load.$a screen yes
+
+
+
+dump $a all custom 2000 dump.hea_equi.$a id type x y z c_csym
+
+
+run            20000
+
+
+
+unfix 30
+unfix 29
+
+next a
+jump tialv loop
+######################################
+# SIMULATION DONE
+print "All done"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

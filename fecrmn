@@ -1,0 +1,82 @@
+units           metal
+dimension       3
+boundary        p       p       p
+atom_style      atomic
+variable latparam equal 4
+
+# ----------------------- ATOM DEFINITION ----------------------------
+lattice         fcc ${latparam}
+region          whole block 0 7 0 6  0 6
+create_box      3 whole
+create_atoms    1 region whole
+
+variable fa equal 282
+variable fb equal 200
+variable ft equal 2000
+
+
+
+set type 1 type/fraction 2 $(v_fa/v_ft) 1734536
+set type 2 type/fraction 3 $(v_fb/(282)) 1734535
+
+
+
+
+group Cr type 1
+group Fe type 2
+group Mn type 3
+
+pair_style      meam
+pair_coeff      * * library.meam Cr Fe Mn CrFeMn.meam Cr Fe Mn
+
+run 1
+write_data first
+
+min_style       cg
+min_modify      dmax 0.1
+thermo          10000
+thermo_style    multi
+minimize        1e-15 1e-15 1000000 1000000
+
+compute csym all centro/atom bcc
+compute peratom all pe/atom
+reset_timestep  0
+
+timestep 0.001
+velocity all create 2500 123456 dist gaussian
+
+
+
+
+
+
+
+
+fix 1 all npt temp 2500 2500 1 iso 0 0 1 drag 1
+
+thermo 1000
+
+thermo_style custom step temp press ke pe etotal vol density
+run 90000
+
+
+
+fix 2 all npt temp 2500 300 1 iso 0 0 1 drag 1
+
+thermo 50
+
+thermo_style custom step temp press ke pe etotal vol density
+run 8000
+write_dump all custom dump1.end id type x y z modify sort id
+unfix 2
+
+
+
+fix 3 all npt temp 300 300 1 iso 0 0 1 drag 1
+
+thermo 50
+
+thermo_style custom step temp press ke pe etotal vol density
+run 20000
+write_dump all custom dump1.end id type x y z modify sort id
+unfix 3

@@ -1,0 +1,896 @@
+iteration,Al_count,Co_count,Cu_count,Cr_count,Fe_count,Mn_count,Ni_count,Ti_count,Nvac_1,Nvac_2,Nvac_3,Nvac_avg,Tensile_strength,Deltas,LLM_Message
+1,323,0,323,1613,1965,1260,2419,161,32,44,38,38.0,2.5302316048957,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 303,
+  ""Cr"": 2016,
+  ""Fe"": 2015,
+  ""Mn"": 1210,
+  ""Ni"": 2036,
+  ""Ti"": 161,
+  ""reason"": ""Increase Ni (+20) and decrease Cu (-20) to lower vacancy concentration and boost tensile strength via higher cohesive energy and solid-solution strengthening; Cu tends to promote vacancies and soften the matrix.""
+}"
+2,323,0,303,1613,1965,1260,2439,161,51,30,48,43.0,2.89405289865587,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 303,
+  ""Cr"": 1613,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2439,
+  ""Ti"": 161,
+  ""reason"": ""Shift 20 atoms from Cu to Ni to reduce vacancy tendency (less Cu segregation) and enhance tensile strength via Ni solid-solution strengthening; total stays 8064, only Cu decreases and Ni increases.""
+}"
+3,323,0,283,1613,1965,1260,2459,161,37,50,54,47.0,2.27105009655742,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+""Al"": 323,
+""Co"": 0,
+""Cu"": 283,
+""Cr"": 1613,
+""Fe"": 1965,
+""Mn"": 1260,
+""Ni"": 2459,
+""Ti"": 161,
+""reason"": ""Shift 20 atoms from Cu to Ni to strengthen the matrix and raise vacancy formation energy; Cu tends to soften and promote voids while Ni generally improves tensile strength and reduces vacancy propensity.""
+}"
+4,323,0,263,1613,1965,1260,2479,161,44,51,55,50.0,1.58553230480025,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 263,
+  ""Cr"": 1613,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2479,
+  ""Ti"": 161,
+  ""reason"": ""Decrease Cu by 20 to reduce vacancy tendency; increase Ni by 20 to enhance tensile strength. Total atoms conserved and Co remains zero.""
+}"
+5,323,0,243,1613,1965,1260,2499,161,42,45,55,47.333333333333336,2.38123584386913,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 20}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 243,
+  ""Cr"": 1613,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2479,
+  ""Ti"": 181,
+  ""reason"": ""Shift 20 atoms from Cu to Ti to reduce vacancies (Cu lowers vacancy formation energy) and increase strength via Ti’s larger size misfit/high cohesion; totals and constraints preserved.""
+}"
+6,323,0,223,1613,1965,1260,2499,181,39,47,61,49.0,1.76191150101289,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 20, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 223,
+  ""Cr"": 1633,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2499,
+  ""Ti"": 161,
+  ""reason"": ""Moved 20 atoms from Cu to Cr. Reducing Cu (lower vacancy formation energy, softer) and increasing Cr (higher vacancy formation energy, strong solid-solution hardener) should lower vacancy propensity and boost tensile strength. Total atoms conserved; one increase and one decrease within 5–25; Co remains zero.""
+}"
+7,323,0,203,1633,1965,1260,2499,181,40,45,58,47.666666666666664,3.72880702636525,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 203,
+  ""Cr"": 1613,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2519,
+  ""Ti"": 181,
+  ""reason"": ""Shift 20 atoms from Cu to Ni; reducing Cu tends to lower vacancy formation while added Ni enhances solid-solution strengthening, targeting fewer vacancies and higher tensile strength.""
+}"
+8,323,0,183,1633,1965,1260,2519,181,48,42,47,45.666666666666664,1.68350663430941,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 183,
+  ""Cr"": 1633,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2519,
+  ""Ti"": 181,
+  ""reason"": ""Shift 20 atoms from Cu to Ni to lower vacancy formation (higher cohesive energy) and increase solid-solution strengthening for higher tensile strength; total atoms unchanged and Co remains zero.""
+}"
+9,323,0,163,1633,1965,1260,2539,181,34,48,53,45.0,1.43354057247417,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 20, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 323,
+  ""Co"": 0,
+  ""Cu"": 163,
+  ""Cr"": 1653,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2519,
+  ""Ti"": 181,
+  ""reason"": ""Shifted 20 atoms from Cu to Cr to reduce Cu-related defect clustering and enhance Cr-driven solid-solution strengthening, targeting lower vacancies and higher tensile strength.""
+}"
+10,323,0,143,1653,1965,1260,2539,181,39,49,54,47.333333333333336,2.10234437817389,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+""Al"": 323,
+""Co"": 0,
+""Cu"": 143,
+""Cr"": 1633,
+""Fe"": 1965,
+""Mn"": 1260,
+""Ni"": 2559,
+""Ti"": 181,
+""reason"": ""Shift 20 atoms from Cu to Ni to raise solid-solution/precipitation strengthening and increase vacancy formation energy, reducing vacancies while boosting tensile strength.""
+}"
+11,323,0,123,1653,1965,1260,2559,181,51,54,47,50.666666666666664,2.33648553539771,"{'Al': -20, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 303,
+  ""Co"": 0,
+  ""Cu"": 143,
+  ""Cr"": 1653,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2559,
+  ""Ti"": 181,
+  ""reason"": ""Decrease Al by 20 to curb vacancies (Al has low vacancy formation energy); increase Ni by 20 to boost solid-solution strengthening and raise vacancy formation energy, aiming for lower vacancies and higher tensile strength.""
+}"
+12,303,0,123,1653,1965,1260,2579,181,57,50,41,49.333333333333336,2.42504307407076,"{'Al': -20, 'Co': 0, 'Cu': 0, 'Cr': 20, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 0}","{
+""Al"": 303,
+""Co"": 0,
+""Cu"": 123,
+""Cr"": 1673,
+""Fe"": 1965,
+""Mn"": 1260,
+""Ni"": 2559,
+""Ti"": 181,
+""reason"": ""Decrease Al by 20 to reduce vacancy formation from size mismatch; increase Cr by 20 to boost solid-solution strengthening, aiming to lower vacancies and raise tensile strength while keeping total atoms constant.""
+}"
+13,283,0,123,1673,1965,1260,2579,181,52,43,62,52.333333333333336,1.36763569959331,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 20}","{
+  ""Al"": 303,
+  ""Co"": 0,
+  ""Cu"": 103,
+  ""Cr"": 1653,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2579,
+  ""Ti"": 201,
+  ""reason"": ""Decrease Cu (−20) to reduce vacancy-prone segregation; increase Ti (+20) to boost Ni–Ti strengthening while keeping total atoms at 8064.""
+}"
+14,283,0,103,1673,1965,1260,2579,201,53,44,49,48.666666666666664,1.70836530990665,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 20}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 103,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2579,
+  ""Ti"": 201,
+  ""reason"": ""Increase Ti (+20) for solid-solution/precipitation strengthening; decrease Cu (-20) to lower vacancy propensity and segregation while keeping total atoms constant and Co at 0.""
+}"
+15,283,0,83,1673,1965,1260,2579,221,55,64,62,60.333333333333336,2.1756183451381,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -20, 'Ni': 20, 'Ti': 0}","{
+""Al"": 283,
+""Co"": 0,
+""Cu"": 103,
+""Cr"": 1673,
+""Fe"": 1965,
+""Mn"": 1240,
+""Ni"": 2599,
+""Ti"": 201,
+""reason"": ""Increase Ni (+20) for solid-solution strengthening and improved FCC stability; reduce Mn (-20) to lower vacancy tendency and potential embrittlement—net aim: fewer vacancies and higher tensile strength.""
+}"
+16,283,0,83,1673,1965,1240,2599,221,53,64,77,64.66666666666667,1.79144358275659,"{'Al': 0, 'Co': 0, 'Cu': -18, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 18, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 65,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1260,
+  ""Ni"": 2597,
+  ""Ti"": 221,
+  ""reason"": ""Shifted 18 atoms from Cu to Ni to reduce vacancy formation tendencies and boost tensile strength via Ni solid-solution strengthening; total atoms unchanged and Co remains zero.""
+}"
+17,283,0,65,1673,1965,1240,2617,221,42,52,52,48.666666666666664,1.18055628203455,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 63,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2619,
+  ""Ti"": 221,
+  ""reason"": ""Shift 20 atoms from Cu to Ni to enhance solid-solution strengthening (higher tensile strength) and reduce vacancy tendency from Cu; total conserved, one increase and one decrease, change magnitude within 5–25, Co remains zero.""
+}"
+18,283,0,45,1673,1965,1240,2637,221,53,56,62,57.0,0.75750498338886,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 45,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2637,
+  ""Ti"": 221,
+  ""reason"": ""Decrease Cu by 20 and increase Ni by 20 to reduce vacancy tendency and boost strength via Ni’s higher vacancy formation energy and solid-solution strengthening.""
+}"
+19,283,0,25,1673,1965,1240,2657,221,43,44,54,47.0,1.61577555345832,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 15, 'Ti': -15}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 45,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2652,
+  ""Ti"": 206,
+  ""reason"": ""Decrease Ti by 15 to reduce vacancy formation from large atomic size mismatch; increase Ni by 15 to boost solid-solution strengthening and tensile strength while keeping total atoms constant and meeting change constraints.""
+}"
+20,283,0,25,1673,1965,1240,2672,206,58,53,54,55.0,1.16779484294394,"{'Al': 0, 'Co': 0, 'Cu': -20, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 1673,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2677,
+  ""Ti"": 221,
+  ""reason"": ""Decrease Cu by 20 to reduce vacancy-prone, softening effects; increase Ni by 20 to enhance solid-solution strengthening. Total stays 8064; exactly one increase and one decrease; Co remains zero.""
+}"
+21,283,0,5,1673,1965,1240,2692,206,56,55,60,57.0,1.72525233065041,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -80}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 25,
+  ""Cr"": 1753,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2672,
+  ""Ti"": 126,
+  ""reason"": ""Decrease Ti by 80 (oversized solute tends to increase vacancy concentration) and increase Cr by 80 to enhance solid-solution strengthening while maintaining FCC stability; total atoms conserved and Co stays zero.""
+}"
+22,283,0,5,1753,1965,1240,2692,126,52,44,43,46.333333333333336,3.07887915390906,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 100, 'Fe': 0, 'Mn': -100, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 1773,
+  ""Fe"": 1965,
+  ""Mn"": 1140,
+  ""Ni"": 2692,
+  ""Ti"": 206,
+  ""reason"": ""Shift 100 atoms from Mn to Cr; Cr’s higher vacancy formation energy and stronger solid-solution strengthening should reduce vacancies and increase tensile strength.""
+}"
+23,283,0,5,1853,1965,1140,2692,126,60,45,37,47.333333333333336,3.43258777997063,"{'Al': -120, 'Co': 0, 'Cu': 0, 'Cr': 120, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 163,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 1873,
+  ""Fe"": 1965,
+  ""Mn"": 1240,
+  ""Ni"": 2692,
+  ""Ti"": 126,
+  ""reason"": ""Decrease Al and increase Cr by 120 to lower vacancy formation (Cr has higher vacancy formation energy) and enhance solid-solution strengthening for higher tensile strength.""
+}"
+24,163,0,5,1973,1965,1140,2692,126,37,45,38,40.0,4.72807671916195,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -60, 'Ni': 60, 'Ti': 0}","{
+  ""Al"": 283,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 1853,
+  ""Fe"": 1965,
+  ""Mn"": 1080,
+  ""Ni"": 2752,
+  ""Ti"": 126,
+  ""reason"": ""Increase Ni by 60 to boost solid-solution strength; decrease Mn by 60 to lower defect/vacancy tendency while keeping total atoms constant.""
+}"
+25,163,0,5,1973,1965,1080,2752,126,44,28,29,33.666666666666664,4.18910862824098,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -40, 'Ni': 40, 'Ti': 0}","{
+  ""Al"": 163,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 1973,
+  ""Fe"": 1965,
+  ""Mn"": 1100,
+  ""Ni"": 2732,
+  ""Ti"": 126,
+  ""reason"": ""Shift 40 atoms from Mn to Ni to reduce vacancy tendency and enhance matrix strength; one increase (Ni) and one decrease (Mn) within allowed change size.""
+}"
+26,163,0,5,1973,1965,1040,2792,126,30,35,35,33.333333333333336,5.18148973039272,"{'Al': 0, 'Co': 0, 'Cu': -5, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 5, 'Ti': 0}","{
+  ""Al"": 163,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 1973,
+  ""Fe"": 1965,
+  ""Mn"": 1080,
+  ""Ni"": 2757,
+  ""Ti"": 126,
+  ""reason"": ""Moved 5 atoms from Cu to Ni to reduce vacancy-prone Cu sites and bolster Ni-driven FCC stability and solid-solution strengthening; only two elements changed, within 5–120, total conserved, Co remains zero.""
+}"
+27,163,0,0,1973,1965,1040,2797,126,30,36,41,35.666666666666664,4.10919768085462,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': -80, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 163,
+  ""Co"": 0,
+  ""Cu"": 5,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 960,
+  ""Ni"": 2792,
+  ""Ti"": 126,
+  ""reason"": ""Shift 80 atoms from Mn to Cr to reduce vacancy formation (lower-diffusivity, stronger lattice with higher Cr) and enhance solid-solution strengthening; total stays 8064, Co remains 0.""
+}"
+28,163,0,0,2053,1965,960,2797,126,25,35,40,33.333333333333336,5.00912737370255,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -80, 'Ni': 0, 'Ti': 80}","{
+  ""Al"": 163,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 1973,
+  ""Fe"": 1965,
+  ""Mn"": 960,
+  ""Ni"": 2797,
+  ""Ti"": 206,
+  ""reason"": ""Increase Ti (+80) for stronger solid-solution/precipitation effects and higher vacancy formation energy; decrease Mn (-80) to reduce vacancy tendency while maintaining overall balance. Total atoms conserved.""
+}"
+29,163,0,0,2053,1965,880,2797,206,27,31,31,29.666666666666668,4.62138253411642,"{'Al': -100, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 100}","{
+  ""Al"": 63,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 960,
+  ""Ni"": 2797,
+  ""Ti"": 226,
+  ""reason"": ""Increase Ti by 100 to boost precipitation/solid-solution strengthening and raise vacancy formation energy; decrease Al by 100 to lower vacancy-prone content and avoid brittle ordering, while keeping total atoms and constraints.""
+}"
+30,63,0,0,2053,1965,880,2797,306,37,36,46,39.666666666666664,8.45584458221594,"{'Al': -100, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 100}","{
+  ""Al"": 63,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 880,
+  ""Ni"": 2797,
+  ""Ti"": 306,
+  ""reason"": ""Decrease Al (low vacancy formation energy) to reduce vacancies; increase Ti (high misfit and higher vacancy formation energy) to boost solid-solution strengthening and further suppress vacancies. Change size: 100.""
+}"
+31,0,0,0,2053,1965,880,2797,369,30,36,32,32.666666666666664,3.98502466071336,"{'Al': -60, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 60}","{
+  ""Al"": 3,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 880,
+  ""Ni"": 2797,
+  ""Ti"": 366,
+  ""reason"": ""Shift 60 atoms from Al to Ti. Lowering Al (very low vacancy formation energy) reduces vacancies; adding Ti raises solid-solution/precipitation strengthening and tends to lower vacancy propensity, improving strength while meeting constraints.""
+}"
+32,0,0,0,2053,1965,880,2797,369,30,36,32,32.666666666666664,3.98502466071336,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -80, 'Ti': 80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 880,
+  ""Ni"": 2717,
+  ""Ti"": 449,
+  ""reason"": ""Shifted 80 atoms from Ni to Ti to enhance lattice distortion and solid-solution strengthening, which should reduce vacancy concentration and increase tensile strength while maintaining overall balance.""
+}"
+33,0,0,0,2053,1965,880,2717,449,26,32,38,32.0,4.59082534546086,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -60, 'Ni': 0, 'Ti': 60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2797,
+  ""Ti"": 429,
+  ""reason"": ""Increase Ti (+60) to boost solid-solution strengthening and raise vacancy formation energy; decrease Mn (-60) to maintain total atoms and reduce elements that tend to lower vacancy formation energy. Change size=60 satisfies constraints with Co kept at 0.""
+}"
+34,0,0,0,2053,1965,820,2717,509,25,39,33,32.333333333333336,9.204362134205,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -60}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2113,
+""Fe"": 1965,
+""Mn"": 880,
+""Ni"": 2717,
+""Ti"": 389,
+""reason"": ""Shifted 60 atoms from Ti to Cr to reduce atomic size mismatch (lowering vacancy formation) while leveraging Cr’s solid-solution strengthening to maintain/improve tensile strength.""
+}"
+35,0,0,0,2113,1965,820,2717,449,27,29,33,29.666666666666668,5.23860870129031,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2053,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2797,
+  ""Ti"": 429,
+  ""reason"": ""Increase Ni (+80) for solid-solution strengthening and higher vacancy formation energy; decrease Ti (-80) to reduce lattice mismatch and vacancy generation while keeping total atoms constant.""
+}"
+36,0,0,0,2113,1965,820,2797,369,32,28,32,30.666666666666668,4.81741630045527,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2113,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2797,
+  ""Ti"": 369,
+  ""reason"": ""Increase Ni (+80) to boost tensile strength and reduce vacancy concentration; decrease Ti (-80) to lessen lattice distortion, keeping total atoms at 8064.""
+}"
+37,0,0,0,2113,1965,820,2877,289,34,28,35,32.333333333333336,5.69964269923649,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2193,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2797,
+  ""Ti"": 289,
+  ""reason"": ""Decrease Ti by 80 to reduce size-mismatch-driven vacancies; increase Cr by 80 to enhance solid-solution strengthening. Total atoms preserved and only one element increased while another decreased.""
+}"
+38,0,0,0,2193,1965,820,2877,209,20,35,35,30.0,6.56120520879127,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': 0, 'Ni': -80, 'Ti': 0}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2193,
+""Fe"": 1965,
+""Mn"": 820,
+""Ni"": 2797,
+""Ti"": 289,
+""reason"": ""Shift 80 atoms from Ni to Cr to increase lattice distortion and vacancy formation energy, aiming to lower vacancies and boost tensile strength while meeting change and total constraints.""
+}"
+39,0,0,0,2273,1965,820,2797,209,23,23,32,26.0,7.22039135031276,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': -60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2253,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2817,
+  ""Ti"": 209,
+  ""reason"": ""Shift 60 atoms from Ni to Cr to enhance solid-solution strengthening and reduce vacancy propensity via higher cohesive energy of Cr, aiming to raise strength while lowering vacancies.""
+}"
+40,0,0,0,2333,1965,820,2737,209,23,34,28,28.333333333333332,7.2345200788919,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2353,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2797,
+  ""Ti"": 129,
+  ""reason"": ""Increase Cr (+80) for solid-solution strengthening; decrease Ti (-80) to reduce vacancy-prone Ti phases. Total atoms preserved; Co remains zero.""
+}"
+41,0,0,0,2413,1965,820,2737,129,19,28,21,22.666666666666668,9.67927753296608,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2333,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2817,
+  ""Ti"": 129,
+  ""reason"": ""Moved 80 atoms from Ti to Ni to reduce vacancy-prone Ti sites and leverage Ni solid-solution strengthening, aiming to lower vacancies and raise tensile strength.""
+}"
+42,0,0,0,2413,1965,820,2817,49,24,27,24,25.0,10.7604772035773,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': -80}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2413,
+""Fe"": 1965,
+""Mn"": 820,
+""Ni"": 2817,
+""Ti"": 49,
+""reason"": ""Shift 80 atoms from Ti to Ni to reduce size-mismatch-driven vacancies while leveraging Ni solid-solution strengthening to boost tensile strength.""
+}"
+43,0,0,0,2413,1965,820,2866,0,18,21,29,22.666666666666668,10.7134605735824,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -80, 'Mn': 0, 'Ni': 0, 'Ti': 80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2413,
+  ""Fe"": 1885,
+  ""Mn"": 820,
+  ""Ni"": 2817,
+  ""Ti"": 129,
+  ""reason"": ""Increase Ti (+80) for stronger lattice distortion and higher vacancy formation energies; decrease Fe (-80) to maintain total while reducing defect-prone fraction.""
+}"
+44,0,0,0,2413,1885,820,2866,80,18,33,21,24.0,9.91263598370908,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 96, 'Fe': 0, 'Mn': 0, 'Ni': -96, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2509,
+  ""Fe"": 1965,
+  ""Mn"": 820,
+  ""Ni"": 2770,
+  ""Ti"": 0,
+  ""reason"": ""Shift 96 atoms from Ni to Cr to increase solid-solution strengthening and lattice distortion, targeting higher tensile strength and fewer vacancies while keeping total atoms 8064 and Co at 0.""
+}"
+45,0,0,0,2509,1885,820,2770,80,19,19,26,21.333333333333332,9.80026401947036,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 100, 'Fe': 0, 'Mn': 0, 'Ni': -100, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2513,
+  ""Fe"": 1885,
+  ""Mn"": 820,
+  ""Ni"": 2766,
+  ""Ti"": 80,
+  ""reason"": ""Shifted 100 atoms from Ni to Cr. Increasing Cr (higher vacancy formation energy and stronger solid-solution strengthening) while reducing Ni lowers equilibrium vacancies and boosts tensile strength, keeping total atoms at 8064 and Co at 0.""
+}"
+46,0,0,0,2609,1885,820,2670,80,12,21,28,20.333333333333332,10.7752126471735,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -100, 'Ti': 100}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2509,
+  ""Fe"": 1885,
+  ""Mn"": 820,
+  ""Ni"": 2670,
+  ""Ti"": 180,
+  ""reason"": ""Increase Ti (+100) for solid-solution strengthening and lower vacancy tendency; decrease Ni (-100) to balance atoms and reduce vacancy mobility.""
+}"
+47,0,0,0,2609,1885,820,2570,180,17,21,18,18.666666666666668,10.8104549015369,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -100, 'Mn': 0, 'Ni': 100, 'Ti': 0}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2609,
+""Fe"": 1785,
+""Mn"": 820,
+""Ni"": 2770,
+""Ti"": 80,
+""reason"": ""Shifted 100 atoms from Fe to Ni to lower vacancy tendency (higher Ni vacancy formation energy) and enhance tensile strength via Ni solid-solution strengthening.""
+}"
+48,0,0,0,2609,1785,820,2670,180,31,24,35,30.0,10.1266407740144,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2669,
+  ""Fe"": 1885,
+  ""Mn"": 820,
+  ""Ni"": 2570,
+  ""Ti"": 120,
+  ""reason"": ""Decrease Ti by 60 (largest size, reduces lattice mismatch) to lower vacancies; increase Cr by 60 to enhance solid-solution strengthening and maintain/increase tensile strength while keeping total atoms constant.""
+}"
+49,0,0,0,2669,1785,820,2670,120,19,28,21,22.666666666666668,10.7111332679512,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -60, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': 60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2549,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2670,
+  ""Ti"": 240,
+  ""reason"": ""Shift 60 atoms from Cr to Ti to boost Ti-driven strengthening while slightly reducing Cr to mitigate vacancy tendency; small, bounded step to explore improved strength with fewer vacancies.""
+}"
+50,0,0,0,2609,1785,820,2670,180,21,20,19,20.0,9.88632857252307,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2729,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2670,
+  ""Ti"": 60,
+  ""reason"": ""Shifted 60 atoms from Ti to Cr. Reducing oversized Ti lowers vacancy tendency; increasing Cr boosts solid-solution strengthening. Change size 60 meets constraints while keeping total atoms constant.""
+}"
+51,0,0,0,2669,1785,820,2670,120,18,28,24,23.333333333333332,10.283178636786,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2609,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2730,
+  ""Ti"": 120,
+  ""reason"": ""Decrease Ti (-60) to reduce vacancy-driving size mismatch; increase Ni (+60) to enhance solid-solution strength while keeping total atoms constant.""
+}"
+52,0,0,0,2669,1785,820,2730,60,18,21,18,19.0,10.5655342158645,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -100, 'Fe': 0, 'Mn': 0, 'Ni': 100, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2569,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2770,
+  ""Ti"": 120,
+  ""reason"": ""Increase Ni (+100) to boost solid-solution strengthening and raise vacancy formation energy, decrease Cr (-100) to reduce defect propensity; meets all constraints and keeps total atoms at 8064.""
+}"
+53,0,0,0,2569,1785,820,2830,60,19,27,24,23.333333333333332,10.9643097964784,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': -60}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2669,
+""Fe"": 1785,
+""Mn"": 820,
+""Ni"": 2790,
+""Ti"": 0,
+""reason"": ""Move 60 atoms from Ti to Ni (Δ=60). Lower Ti reduces lattice mismatch and vacancy formation; higher Ni raises solid-solution strength. Total stays 8064; only Ni increases and Ti decreases; Co remains 0.""
+}"
+54,0,0,0,2569,1785,820,2890,0,19,13,30,20.666666666666668,10.8130267350651,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -100, 'Ti': 100}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2569,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2730,
+  ""Ti"": 160,
+  ""reason"": ""Increase Ti (+100) for stronger solid-solution hardening and higher vacancy formation energy; decrease Ni (-100) to avoid over-stabilizing the fcc matrix and lower vacancy propensity while keeping total atoms constant.""
+}"
+55,0,0,0,2569,1785,820,2790,100,16,20,32,22.666666666666668,9.99790821983976,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -96, 'Ti': 96}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2569,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2794,
+  ""Ti"": 96,
+  ""reason"": ""Shifted 96 atoms from Ni to Ti to raise vacancy formation energy and enhance strengthening, aiming to reduce vacancies and increase tensile strength while keeping total atoms constant.""
+}"
+56,0,0,0,2569,1785,820,2694,196,19,19,25,21.0,9.04073227434864,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': -60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2629,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2730,
+  ""Ti"": 100,
+  ""reason"": ""Shift 60 atoms from Ni to Cr to raise vacancy formation energy (reducing vacancies) and enhance solid-solution strengthening; single increase/decrease within 5–120 and total remains 8064.""
+}"
+57,0,0,0,2629,1785,820,2634,196,15,12,31,19.333333333333332,9.98703961161304,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 80, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2649,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2694,
+  ""Ti"": 116,
+  ""reason"": ""Increase Cr for solid-solution strengthening; decrease Ti to reduce lattice distortion and vacancy formation. Total atoms conserved.""
+}"
+58,0,0,0,2709,1785,820,2634,116,21,21,23,21.666666666666668,11.2434941676536,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 60, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2689,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2634,
+  ""Ti"": 136,
+  ""reason"": ""Reduce Ti (largest radius) to lower vacancy tendency; increase Cr to enhance solid-solution strength while keeping total=8064 and Co=0.""
+}"
+59,0,0,0,2769,1785,820,2634,56,12,24,24,20.0,12.0808738128151,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -80, 'Mn': 0, 'Ni': 0, 'Ti': 80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2709,
+  ""Fe"": 1705,
+  ""Mn"": 820,
+  ""Ni"": 2634,
+  ""Ti"": 196,
+  ""reason"": ""Shift 80 atoms from Fe to Ti to enhance solid-solution strengthening and lattice distortion, lowering vacancy propensity while increasing tensile strength; total remains 8064 and Co stays 0.""
+}"
+60,0,0,0,2769,1705,820,2634,136,24,18,20,20.666666666666668,10.7428640690526,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 20, 'Ti': -20}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2769,
+  ""Fe"": 1785,
+  ""Mn"": 820,
+  ""Ni"": 2654,
+  ""Ti"": 36,
+  ""reason"": ""Reduce Ti to lower lattice distortion and vacancy tendency; increase Ni to bolster solid-solution strengthening and maintain/improve tensile strength while keeping total atoms constant.""
+}"
+61,0,0,0,2769,1705,820,2654,116,15,12,16,14.333333333333334,9.28620924843214,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -80, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2689,
+  ""Fe"": 1705,
+  ""Mn"": 820,
+  ""Ni"": 2714,
+  ""Ti"": 136,
+  ""reason"": ""Shifted 80 atoms from Cr to Ni to lower vacancy formation and increase tensile strength via higher valence electron concentration and solid-solution strengthening; Co remains zero and total atoms stay 8064.""
+}"
+62,0,0,0,2689,1705,820,2734,116,15,30,14,19.666666666666668,10.5516372890402,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -60, 'Fe': 20, 'Mn': 0, 'Ni': 40, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2709,
+  ""Fe"": 1725,
+  ""Mn"": 820,
+  ""Ni"": 2694,
+  ""Ti"": 116,
+  ""reason"": ""Shift 60 atoms from Cr to Ni (+40) and Fe (+20) to reduce Cr-driven vacancy tendency while leveraging Ni/Fe solid-solution strengthening; changes keep totals and constraints.""
+}"
+63,0,0,0,2629,1725,820,2774,116,21,22,30,24.333333333333332,9.63665802324418,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2689,
+  ""Fe"": 1705,
+  ""Mn"": 820,
+  ""Ni"": 2794,
+  ""Ti"": 56,
+  ""reason"": ""Increase Ni (+60) to boost tensile strength via solid-solution strengthening; decrease Ti (-60) to reduce size-mismatch effects that promote vacancies while keeping total atoms constant.""
+}"
+64,0,0,0,2629,1725,820,2834,56,24,19,35,26.0,10.0021323642041,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 40, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -40}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2669,
+  ""Fe"": 1725,
+  ""Mn"": 820,
+  ""Ni"": 2774,
+  ""Ti"": 76,
+  ""reason"": ""Move 40 atoms from Ti to Cr to reduce vacancy formation (Ti drives lattice distortion) while slightly boosting solid-solution strength via Cr; keeps total 8064 and only one increase/decrease.""
+}"
+65,0,0,0,2669,1725,820,2834,16,21,23,29,24.333333333333332,11.2135075905839,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -50, 'Mn': 50, 'Ni': 0, 'Ti': 0}",Fallback move used
+66,0,0,0,2669,1675,870,2834,16,28,26,25,26.333333333333332,10.7749299484211,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -80, 'Ti': 80}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2669,
+""Fe"": 1725,
+""Mn"": 820,
+""Ni"": 2754,
+""Ti"": 96,
+""reason"": ""Increase Ti (+80) to promote solid-solution/ordering strengthening and raise vacancy formation energy; decrease Ni (-80) to conserve atoms while keeping phase stability, aiming to lower vacancies and boost tensile strength.""
+}"
+67,0,0,0,2669,1675,870,2754,96,17,24,27,22.666666666666668,10.3605484947574,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -60, 'Ti': 60}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2669,
+""Fe"": 1675,
+""Mn"": 870,
+""Ni"": 2774,
+""Ti"": 76,
+""reason"": ""Shift 60 atoms from Ni to Ti to increase lattice distortion (boosting strength) and slightly reduce Ni, which tends to lower vacancy formation energy, aiming to cut vacancies.""
+}"
+68,0,0,0,2669,1675,870,2694,156,24,24,18,22.0,9.33393096578899,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -60, 'Ni': 60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2669,
+  ""Fe"": 1675,
+  ""Mn"": 810,
+  ""Ni"": 2814,
+  ""Ti"": 96,
+  ""reason"": ""Shift 60 atoms from Mn to Ni to strengthen the Ni-rich matrix and slightly lower size mismatch, aiming to reduce vacancies while increasing tensile strength; total atoms unchanged.""
+}"
+69,0,0,0,2669,1675,810,2754,156,15,23,23,20.333333333333332,9.28171662688692,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': -80}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2669,
+  ""Fe"": 1675,
+  ""Mn"": 870,
+  ""Ni"": 2774,
+  ""Ti"": 76,
+  ""reason"": ""Shift 80 atoms from Ti to Ni to reduce vacancy-prone oversized Ti and enhance solid-solution strengthening via Ni, improving tensile strength while keeping total atoms constant.""
+}"
+70,0,0,0,2669,1675,810,2834,76,20,26,20,22.0,10.2489677380119,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 100, 'Fe': 0, 'Mn': 0, 'Ni': 0, 'Ti': -100}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2769,
+  ""Fe"": 1675,
+  ""Mn"": 810,
+  ""Ni"": 2754,
+  ""Ti"": 56,
+  ""reason"": ""Shift 100 atoms from Ti to Cr to reduce lattice size mismatch (fewer vacancies) and increase solid-solution strengthening via Cr, with Co kept at 0.""
+}"
+71,0,0,0,2745,1675,810,2834,0,24,27,30,27.0,11.0908593422239,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 90, 'Fe': 0, 'Mn': 0, 'Ni': -90, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2759,
+  ""Fe"": 1675,
+  ""Mn"": 810,
+  ""Ni"": 2744,
+  ""Ti"": 76,
+  ""reason"": ""Shift 90 atoms from Ni to Cr to raise vacancy formation energy and enhance solid-solution strengthening, reducing vacancies while maintaining or increasing tensile strength; total atoms conserved and constraints satisfied.""
+}"
+72,0,0,0,2835,1675,810,2744,0,22,31,27,26.666666666666668,12.1702589311069,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 100, 'Mn': 0, 'Ni': -100, 'Ti': 0}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2745,
+""Fe"": 1775,
+""Mn"": 810,
+""Ni"": 2734,
+""Ti"": 0,
+""reason"": ""Moved 100 atoms from Ni (highest) to Fe (lowest) to reduce compositional skew; this should lower vacancies and keep strength high via solid-solution effects while keeping Co at 0.""
+}"
+73,0,0,0,2835,1775,810,2644,0,21,17,19,19.0,12.5924702941817,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -60, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2775,
+  ""Fe"": 1675,
+  ""Mn"": 810,
+  ""Ni"": 2804,
+  ""Ti"": 0,
+  ""reason"": ""Shift 60 atoms from Cr to Ni to reduce vacancy propensity and enhance tensile strength via FCC stabilization and improved cohesion; total atoms unchanged.""
+}"
+74,0,0,0,2775,1775,810,2704,0,14,17,21,17.333333333333332,12.0233876579243,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': -80, 'Fe': 0, 'Mn': 0, 'Ni': 80, 'Ti': 0}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2755,
+""Fe"": 1775,
+""Mn"": 810,
+""Ni"": 2724,
+""Ti"": 0,
+""reason"": ""Shift 80 atoms from Cr to Ni to enhance solid-solution strengthening and austenitic stability while reducing defect propensity; obeys total count and step constraints.""
+}"
+75,0,0,0,2695,1775,810,2784,0,16,23,37,25.333333333333332,11.8432760883372,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -60, 'Mn': 0, 'Ni': 60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2775,
+  ""Fe"": 1715,
+  ""Mn"": 810,
+  ""Ni"": 2764,
+  ""Ti"": 0,
+  ""reason"": ""Increase Ni (+60) and decrease Fe (-60) to strengthen the Ni-rich matrix and reduce vacancy formation while keeping total atoms constant.""
+}"
+76,0,0,0,2695,1715,810,2844,0,30,22,30,27.333333333333332,10.7449405557913,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 100, 'Fe': -100, 'Mn': 0, 'Ni': 0, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1675,
+  ""Mn"": 810,
+  ""Ni"": 2784,
+  ""Ti"": 0,
+  ""reason"": ""Increase Cr (+100) to raise lattice distortion and vacancy formation energy; decrease Fe (-100) to keep total fixed. This should reduce vacancies and strengthen the alloy while keeping Co at 0.""
+}"
+77,0,0,0,2795,1615,810,2844,0,29,18,20,22.333333333333332,11.6665002511001,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -60, 'Ti': 60}","{
+""Al"": 0,
+""Co"": 0,
+""Cu"": 0,
+""Cr"": 2695,
+""Fe"": 1715,
+""Mn"": 810,
+""Ni"": 2784,
+""Ti"": 60,
+""reason"": ""Shift 60 atoms from Ni to Ti to enhance lattice distortion and Ti–vacancy binding, aiming to reduce vacancies while increasing tensile strength; respects total count and Co=0.""
+}"
+78,0,0,0,2795,1615,810,2784,60,18,23,23,21.333333333333332,11.1287827272453,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 100, 'Ni': -100, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1615,
+  ""Mn"": 910,
+  ""Ni"": 2744,
+  ""Ti"": 0,
+  ""reason"": ""Move 100 atoms from Ni to Mn to approach a more balanced Cr-Fe-Mn-Ni ratio; this should reduce vacancies via improved packing/mixing and enhance strength through solid-solution effects. Change size=100, Co stays 0, total remains 8064.""
+}"
+79,0,0,0,2795,1615,910,2684,60,28,25,35,29.333333333333332,10.1378989803391,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': -100, 'Ti': 100}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1615,
+  ""Mn"": 810,
+  ""Ni"": 2684,
+  ""Ti"": 160,
+  ""reason"": ""Increase Ti by 100 and decrease Ni by 100 to keep total constant. Ti’s larger size boosts solid-solution strengthening and its higher vacancy formation energy should reduce vacancies.""
+}"
+80,0,0,0,2795,1615,910,2584,160,17,22,25,21.333333333333332,10.223866480426,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': -60, 'Ni': 60, 'Ti': 0}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1615,
+  ""Mn"": 850,
+  ""Ni"": 2744,
+  ""Ti"": 60,
+  ""reason"": ""Increase Ni (+60) and decrease Mn (-60) to lower vacancy tendency (higher vacancy formation energy in Ni vs Mn) and enhance solid-solution strengthening, improving tensile strength while meeting constraints.""
+}"
+81,0,0,0,2795,1615,850,2644,160,17,20,22,19.666666666666668,10.0753445350836,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1615,
+  ""Mn"": 910,
+  ""Ni"": 2644,
+  ""Ti"": 100,
+  ""reason"": ""Move 60 atoms from Ti to Ni to reduce lattice distortion (lower vacancies) and enhance Ni-driven solid-solution strengthening and FCC stability for higher tensile strength.""
+}"
+82,0,0,0,2795,1615,850,2704,100,14,31,28,24.333333333333332,11.2816617459326,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': 0, 'Mn': 0, 'Ni': 60, 'Ti': -60}","{
+  ""Al"": 0,
+  ""Co"": 0,
+  ""Cu"": 0,
+  ""Cr"": 2795,
+  ""Fe"": 1615,
+  ""Mn"": 850,
+  ""Ni"": 2704,
+  ""Ti"": 100,
+  ""reason"": ""Shift 60 atoms from Ti to Ni to reduce lattice distortion (fewer vacancies) while leveraging Ni’s solid-solution strengthening to boost tensile strength.""
+}"
+83,0,0,0,2795,1615,850,2764,40,26,24,25,25.0,10.4939610161083,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -50, 'Mn': 50, 'Ni': 0, 'Ti': 0}",Fallback move used
+84,0,0,0,2795,1565,900,2764,40,25,33,33,30.333333333333332,9.69623982239009,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -50, 'Mn': 50, 'Ni': 0, 'Ti': 0}",Fallback move used
+1,0,0,0,2795,1515,950,2764,40,21,35,27,27.666666666666668,10.362336602024,"{'Al': 0, 'Co': 0, 'Cu': 0, 'Cr': 0, 'Fe': -50, 'Mn': 50, 'Ni': 0, 'Ti': 0}",Fallback move used

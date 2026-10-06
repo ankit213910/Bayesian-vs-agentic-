@@ -1,0 +1,15 @@
+lmp_rocky9
+
+# Secrets
+.env
+*LLM_API_KEY*
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large HPC files
+lmp_rocky9

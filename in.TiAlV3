@@ -1,0 +1,141 @@
+units           metal
+dimension       3
+boundary        p       p       p
+atom_style      atomic
+variable latparam equal 3.21
+
+read_data       data
+
+pair_style hybrid/overlay meam zbl 0.5 2
+pair_coeff      * * meam library.meam Al Co Cu Cr Fe Mn Ni Ti FeMnNiTiCuCrCoAl.meam Al Co Cu Cr Fe Mn Ni Ti
+
+
+pair_coeff 1 1 zbl 13 13   # Al–Al
+pair_coeff 2 2 zbl 27 27   # Co–Co
+pair_coeff 3 3 zbl 29 29   # Cu–Cu
+pair_coeff 4 4 zbl 24 24   # Cr–Cr
+pair_coeff 5 5 zbl 26 26   # Fe–Fe
+pair_coeff 6 6 zbl 25 25   # Mn–Mn
+pair_coeff 7 7 zbl 28 28   # Ni–Ni
+pair_coeff 8 8 zbl 22 22   # Ti–Ti
+
+
+pair_coeff 1 2 zbl 13 27   # Al–Co
+pair_coeff 1 3 zbl 13 29   # Al–Cu
+pair_coeff 1 4 zbl 13 24   # Al–Cr
+pair_coeff 1 5 zbl 13 26   # Al–Fe
+pair_coeff 1 6 zbl 13 25   # Al–Mn
+pair_coeff 1 7 zbl 13 28   # Al–Ni
+pair_coeff 1 8 zbl 13 22   # Al–Ti
+
+pair_coeff 2 3 zbl 27 29   # Co–Cu
+pair_coeff 2 4 zbl 27 24   # Co–Cr
+pair_coeff 2 5 zbl 27 26   # Co–Fe
+pair_coeff 2 6 zbl 27 25   # Co–Mn
+pair_coeff 2 7 zbl 27 28   # Co–Ni
+pair_coeff 2 8 zbl 27 22   # Co–Ti
+
+pair_coeff 3 4 zbl 29 24   # Cu–Cr
+pair_coeff 3 5 zbl 29 26   # Cu–Fe
+pair_coeff 3 6 zbl 29 25   # Cu–Mn
+pair_coeff 3 7 zbl 29 28   # Cu–Ni
+pair_coeff 3 8 zbl 29 22   # Cu–Ti
+
+pair_coeff 4 5 zbl 24 26   # Cr–Fe
+pair_coeff 4 6 zbl 24 25   # Cr–Mn
+pair_coeff 4 7 zbl 24 28   # Cr–Ni
+pair_coeff 4 8 zbl 24 22   # Cr–Ti
+
+pair_coeff 5 6 zbl 26 25   # Fe–Mn
+pair_coeff 5 7 zbl 26 28   # Fe–Ni
+pair_coeff 5 8 zbl 26 22   # Fe–Ti
+
+pair_coeff 6 7 zbl 25 28   # Mn–Ni
+pair_coeff 6 8 zbl 25 22   # Mn–Ti
+
+pair_coeff 7 8 zbl 28 22   # Ni–Ti
+
+
+
+
+group Al type 1
+group Co type 2
+group Cu type 3
+group Cr type 4
+group Fe type 5
+group Mn type 6
+group Ni type 7
+group Ti type 8
+
+region box block 0 56 0 48 0 48
+region projectile block 7.5 8.5 1.5 2.5 1.5 2.5
+region boundary block 2 54 2 46 2 46
+
+group proj id 1005
+group box region box
+group host subtract box proj
+
+group boundary region boundary
+group bound subtract box boundary
+
+min_style       cg
+min_modify      dmax 0.1
+thermo          10000
+thermo_style    multi
+minimize        1e-15 1e-15 1000000 1000000
+
+compute csym all centro/atom bcc
+compute peratom all pe/atom
+reset_timestep  0
+
+timestep 0.001
+velocity all create 300 123456 dist gaussian
+
+
+
+
+
+
+
+fix 1 all npt temp 300 300 0.25 iso 0.0 0.0 1
+fix 9 all temp/berendsen 300 300 0.1
+thermo_style custom step temp press ke pe etotal vol density
+thermo 1000
+run 5000
+write_dump all custom dump.first.txt id type x y z
+unfix 1
+
+fix 2 all nve
+timestep 0.001
+
+velocity proj set 50 400 100  units box
+
+
+
+fix 3 bound langevin 300 300 0.01 2134
+fix 11 all temp/berendsen 300 300 0.1
+compute centro all centro/atom fcc
+compute ke all ke/atom
+thermo 1000
+dump 11 all custom 9000 all.out id type x y z vx vy vz c_centro c_ke
+dump 13 proj custom 1 proj.out id type x y z vx vy vz c_centro c_ke
+run 10000
+
+undump 11
+undump 13
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
